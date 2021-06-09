@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// HOMEPAGE
+//messo in app http controller
+Route::get('/', 'PageController@index')->name('home');
+
