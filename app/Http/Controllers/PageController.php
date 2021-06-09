@@ -15,7 +15,7 @@ class PageController extends Controller
         // DA FARE CHIAMATA AL DATABASE
         
         $movies = Movie::all();
-        dump($movies);
+        //dump($movies);
         return view('home', compact('movies'));
     }
 
